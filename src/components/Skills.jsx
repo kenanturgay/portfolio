@@ -7,14 +7,15 @@ const Skills = () => {
   
   const skills = [
     { name: "React & React Hooks", level: t('skills.levels.advanced') },
-    { name: "TypeScript", level: t('skills.levels.advanced') },
-    { name: "Next.js", level: t('skills.levels.advanced') },
-    { name: "Node.js", level: t('skills.levels.intermediate') },
     { name: "Tailwind CSS", level: t('skills.levels.advanced') },
     { name: "Git & Version Control", level: t('skills.levels.advanced') },
     { name: "REST APIs", level: t('skills.levels.advanced') },
-    { name: "GraphQL", level: t('skills.levels.intermediate') },
-    { name: "Testing (Jest, RTL)", level: t('skills.levels.intermediate') }
+    { name: "PostgreSQL", level: t('skills.levels.intermediate') },
+    { name: "Python", level: t('skills.levels.intermediate') },
+    { name: "Java", level: t('skills.levels.intermediate') },
+    { name: "Spring Boot", level: t('skills.levels.intermediate') },
+    { name: "Figma", level: t('skills.levels.intermediate') },
+    { name: "Testing (Jest, RTL)", level: t('skills.levels.intermediate') },
   ];
 
   return (

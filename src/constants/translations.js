@@ -38,7 +38,7 @@ export const translations = {
       title: 'Deneyim',
       positions: [
         {
-          title: 'Senior Frontend Geliştirici',
+          title: 'Otomasyon Mühendisi',
           company: 'Tech Solutions A.Ş.',
           period: '2022 - Günümüz',
           description: 'React, TypeScript ve modern web teknolojileri ile kurumsal uygulamalar geliştirme.'
@@ -149,16 +149,4 @@ export const translations = {
       }
     }
   },
-  ar: {
-    nav: {
-      about: 'عني',
-      experience: 'خبرة',
-      skills: 'مهارات',
-      projects: 'مشاريع',
-      contact: 'اتصل'
-    },
-    hero: {
-      greeting: 'مرحباً، أنا',
-      name: 'كنان تورغاي',
-      title: 'مطور واجهة أمامية',
-      descriptio
+};

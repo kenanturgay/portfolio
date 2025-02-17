@@ -10,8 +10,8 @@ export const translations = {
     hero: {
       greeting: 'Merhaba, Ben',
       name: 'Kenan Turgay',
-      title: 'Frontend Geliştirici',
-      description: 'Frontend Geliştirici olarak modern web teknolojileri ile çalışıyor, kullanıcı dostu ve performanslı uygulamalar geliştiriyorum.',
+      title: 'Full Stack Develeper',
+      description: '"Full Stack Developer olarak modern teknolojilerle çalışıyor, kullanıcı dostu ve yüksek performanslı uygulamalar geliştiriyorum.',
       buttons: {
         contact: 'İletişime Geç',
         projects: 'Projelerimi Gör'
@@ -22,8 +22,9 @@ export const translations = {
       features: {
         tech: {
           title: 'Modern Teknolojiler',
-          description: 'React, Next.js ve TypeScript ile modern web uygulamaları geliştiriyorum.'
+          description: 'React ile UI geliştiriyorum. Java ve Pyhton ile güvenli ve verimli backend sistemleri geliştiriyorum.'
         },
+
         design: {
           title: 'Responsive Tasarım',
           description: 'Tüm cihazlarda mükemmel çalışan, kullanıcı dostu arayüzler tasarlıyorum.'
@@ -37,17 +38,25 @@ export const translations = {
     experience: {
       title: 'Deneyim',
       positions: [
+
         {
-          title: 'Senior Frontend Geliştirici',
-          company: 'Tech Solutions A.Ş.',
-          period: '2022 - Günümüz',
-          description: 'React, TypeScript ve modern web teknolojileri ile kurumsal uygulamalar geliştirme.'
+          title: 'Yazılım Mühendisi',
+          company: 'Workintech A.Ş.',
+          period: '2023 - Günümüz',
+          description: 'React ile modern web teknolojileri ile kurumsal web uygulamalar geliştirme. Java ve Pyhton ile backend sistemleri geliştirme.'
+        },
+
+        {
+          title: 'Otomasyon ve Network Mühendisi',
+          company: 'Linde Gaz A.Ş.',
+          period: '2021 - Günümüz',
+          description: 'Otomasyon ve ağ sistemlerinin yönetimi, bakımı ve geliştirilmesi üzerine çalışmalar yapma, endüstriyel otomasyon süreçlerini optimize etme ve ağ altyapısını güçlendirme.'
         },
         {
-          title: 'Frontend Geliştirici',
-          company: 'Digital Innovations Ltd.',
-          period: '2020 - 2022',
-          description: 'Modern web uygulamaları geliştirme, performans optimizasyonu.'
+          title: 'Otomasyon ve Network Mühendisi',
+          company: 'Moduler Otomasyon Sistemleri A.Ş.',
+          period: '2017 - 2021',
+          description: 'Akıllı sistemler ve ağ altyapıları üzerine çalışmalar yapma, kablosuz akıllı ev otomasyon sistemleri geliştirme ve endüstriyel otomasyon çözümleri tasarlama.'
         }
       ]
     },
@@ -108,7 +117,7 @@ export const translations = {
       features: {
         tech: {
           title: 'Modern Technologies',
-          description: 'I develop modern web applications using React, Next.js, and TypeScript.'
+          description: 'I develop UIs with React and build secure, efficient backend systems using Java and Python.'
         },
         design: {
           title: 'Responsive Design',
@@ -123,19 +132,28 @@ export const translations = {
     experience: {
       title: 'Experience',
       positions: [
+
         {
-          title: 'Senior Frontend Developer',
-          company: 'Tech Solutions Inc.',
-          period: '2022 - Present',
-          description: 'Developing enterprise applications with React, TypeScript, and modern web technologies.'
+          title: 'Software Engineer',
+          company: 'Workintech A.Ş.',
+          period: '2023 - Present',
+          description: 'Developing corporate web applications with React and modern web technologies. Building backend systems with Java and Python.'
+        },
+    
+        {
+          title: 'Automation and Network Engineer',
+          company: 'Linde Gaz A.Ş.',
+          period: '2021 - Present',
+          description: 'Working on the management, maintenance, and development of automation and network systems. Optimizing industrial automation processes and improving network infrastructure.'
         },
         {
-          title: 'Frontend Developer',
-          company: 'Digital Innovations Ltd.',
-          period: '2020 - 2022',
-          description: 'Modern web application development, performance optimization.'
+          title: 'Automation and Network Engineer',
+          company: 'Moduler Otomasyon Sistemleri A.Ş.',
+          period: '2017 - 2021',
+          description: 'Working on smart systems and network infrastructure. Developing wireless smart home automation systems and designing industrial automation solutions.'
         }
-      ]
+    ]
+    
     },
     skills: {
       title: 'Skills',
@@ -169,92 +187,6 @@ export const translations = {
       },
       success: 'Message sent successfully',
       error: 'An error occurred'
-    }
-  },
-  ar: {
-    nav: {
-      about: 'عني',
-      experience: 'خبرة',
-      skills: 'مهارات',
-      projects: 'مشاريع',
-      contact: 'اتصل'
-    },
-    hero: {
-      greeting: 'مرحباً، أنا',
-      name: 'كنان تورغاي',
-      title: 'مطور واجهة أمامية',
-      description: 'كمطور واجهة أمامية، أعمل مع تقنيات الويب الحديثة لتطوير تطبيقات سهلة الاستخدام وعالية الأداء.',
-      buttons: {
-        contact: 'اتصل بي',
-        projects: 'عرض المشاريع'
-      }
-    },
-    about: {
-      title: 'عني',
-      features: {
-        tech: {
-          title: 'تقنيات حديثة',
-          description: 'أطور تطبيقات ويب حديثة باستخدام React و Next.js و TypeScript.'
-        },
-        design: {
-          title: 'تصميم متجاوب',
-          description: 'أصمم واجهات سهلة الاستخدام تعمل بشكل مثالي على جميع الأجهزة.'
-        },
-        team: {
-          title: 'عمل جماعي',
-          description: 'أكتب كوداً مستداماً مناسباً للعمل الجماعي باستخدام منهجيات Agile.'
-        }
-      }
-    },
-    experience: {
-      title: 'خبرة',
-      positions: [
-        {
-          title: 'مطور واجهة أمامية أول',
-          company: 'Tech Solutions Inc.',
-          period: '2022 - الحاضر',
-          description: 'تطوير تطبيقات مؤسسية باستخدام React و TypeScript وتقنيات الويب الحديثة.'
-        },
-        {
-          title: 'مطور واجهة أمامية',
-          company: 'Digital Innovations Ltd.',
-          period: '2020 - 2022',
-          description: 'تطوير تطبيقات ويب حديثة وتحسين الأداء.'
-        }
-      ]
-    },
-    skills: {
-      title: 'مهارات',
-      levels: {
-        advanced: 'متقدم',
-        intermediate: 'متوسط',
-        beginner: 'مبتدئ'
-      }
-    },
-    projects: {
-      title: 'مشاريع',
-      viewCode: 'عرض الكود',
-      viewDemo: 'عرض العرض التجريبي'
-    },
-    contact: {
-      title: 'اتصل',
-      form: {
-        name: 'الاسم',
-        email: 'البريد الإلكتروني',
-        message: 'الرسالة',
-        submit: 'إرسال'
-      },
-      validation: {
-        nameMin: 'يجب أن يكون الاسم 3 أحرف على الأقل',
-        nameMax: 'لا يمكن أن يتجاوز الاسم 50 حرفاً',
-        nameFormat: 'يمكن أن يحتوي الاسم على أحرف فقط',
-        emailInvalid: 'يرجى إدخال عنوان بريد إلكتروني صالح',
-        emailMax: 'لا يمكن أن يتجاوز البريد الإلكتروني 100 حرف',
-        messageMin: 'يجب أن تكون الرسالة 10 أحرف على الأقل',
-        messageMax: 'لا يمكن أن تتجاوز الرسالة 500 حرف'
-      },
-      success: 'تم إرسال الرسالة بنجاح',
-      error: 'حدث خطأ'
     }
   }
 };

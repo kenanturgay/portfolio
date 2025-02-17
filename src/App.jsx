@@ -42,7 +42,7 @@ function App() {
                 <div className="relative inline-block">
                   <div className="absolute -inset-1 bg-gradient-to-r from-primary-500 to-pink-500 rounded-full opacity-75 blur-lg"></div>
                   <img
-                    src="/profile-pic.jpg"
+                    src="/profile-pic.png"
                     alt={t('hero.name')}
                     className="relative w-40 h-40 rounded-full object-cover border-2 border-gray-100/10 dark:border-white/10"
                   />
