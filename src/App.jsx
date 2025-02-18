@@ -13,7 +13,7 @@ function App() {
   const [activeSection, setActiveSection] = useState('hero');
 
   return (
-    <div className="min-h-screen bg-white dark:bg-black relative overflow-hidden">
+    <div className="min-h-screen  bg-white dark:bg-black relative overflow-hidden">
       <div className="fixed inset-0 bg-noise opacity-5"></div>
       <div className="fixed inset-0 bg-gradient-to-b from-primary-50/20 dark:from-primary-900/20 via-white dark:via-black to-white dark:to-black"></div>
       
