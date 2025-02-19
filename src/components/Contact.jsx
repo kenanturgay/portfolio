@@ -37,11 +37,21 @@ const Contact = () => {
 
   const onSubmit = async (data) => {
     try {
-      // Simüle edilmiş başarılı gönderim
-      console.log('Form data:', data);
-      setSubmitStatus({ error: '', success: true });
-      reset();
-      setTimeout(() => setSubmitStatus({ error: '', success: false }), 5000);
+      const response = await fetch(import.meta.env.VITE_FORMSPREE_ENDPOINT, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(data)
+      });
+
+      if (response.ok) {
+        setSubmitStatus({ error: '', success: true });
+        reset();
+        setTimeout(() => setSubmitStatus({ error: '', success: false }), 5000);
+      } else {
+        throw new Error('Form submission failed');
+      }
     } catch (error) {
       console.error('Submission error:', error);
       setSubmitStatus({
