@@ -1,8 +1,8 @@
 // Social Links
 export const socialLinks = {
-  github: import.meta.env.VITE_GITHUB_URL || "https://github.com/kenanturgay",
+  github: import.meta.env.VITE_GITHUB_URL,
   linkedin: import.meta.env.VITE_LINKEDIN_URL,
-  twitter: import.meta.env.VITE_TWITTER_URL || "https://x.com/knnturgay"
+  twitter: import.meta.env.VITE_TWITTER_URL
 };
 
 // Navigation
