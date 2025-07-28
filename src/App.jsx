@@ -6,6 +6,7 @@ import Skills from './components/Skills';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
 import SocialLinks from './components/SocialLinks';
+import SimpleCounter from './components/SimpleCounter';
 import { useLanguage } from './contexts/LanguageContext';
 
 function App() {
@@ -60,6 +61,11 @@ function App() {
 
               <div className="flex justify-center mb-10">
                 <SocialLinks />
+              </div>
+
+              {/* Visitor Counter */}
+              <div className="flex justify-center mb-10">
+                <SimpleCounter className="max-w-sm" />
               </div>
               
               <div className="flex flex-col sm:flex-row justify-center gap-6">
