@@ -3,7 +3,19 @@ import { translations } from '../constants/translations.data';
 
 export const useLanguage = () => {
   const [language, setLanguage] = useState(() => {
-    return localStorage.getItem('language') || 'tr';
+    const savedLanguage = localStorage.getItem('language');
+    if (savedLanguage) {
+      return savedLanguage;
+    }
+
+    const browserLanguage = navigator.language || navigator.userLanguage;
+    const languageCode = browserLanguage.split('-')[0];
+
+    if (['en', 'tr', 'ar'].includes(languageCode)) {
+      return languageCode;
+    }
+
+    return 'tr';
   });
 
   useEffect(() => {
