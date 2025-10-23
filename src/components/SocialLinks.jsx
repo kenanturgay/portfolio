@@ -1,6 +1,6 @@
-import React from 'react';
-import { Github, Linkedin, Twitter } from 'lucide-react';
-import { socialLinks } from '../constants';
+import React from "react";
+import { Github, Linkedin, Twitter } from "lucide-react";
+import { socialLinks } from "../constants";
 
 const SocialLinks = () => {
   return (
@@ -9,7 +9,7 @@ const SocialLinks = () => {
         href={socialLinks.github}
         target="_blank"
         rel="noopener noreferrer"
-        className="text-gray-600 hover:text-gray-900"
+        className="text-gray-600 hover:text-red-900"
       >
         <Github className="h-6 w-6" />
       </a>
@@ -17,7 +17,7 @@ const SocialLinks = () => {
         href={socialLinks.linkedin}
         target="_blank"
         rel="noopener noreferrer"
-        className="text-gray-600 hover:text-gray-900"
+        className="text-gray-600 hover:text-red-900"
       >
         <Linkedin className="h-6 w-6" />
       </a>
@@ -25,7 +25,7 @@ const SocialLinks = () => {
         href={socialLinks.twitter}
         target="_blank"
         rel="noopener noreferrer"
-        className="text-gray-600 hover:text-gray-900"
+        className="text-gray-600 hover:text-red-900"
       >
         <Twitter className="h-6 w-6" />
       </a>
