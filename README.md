@@ -104,6 +104,12 @@ MIT
 
 ## 👤 Geliştirici
 
+# learn
+
+how to do gitflow
+
+
+
 Kenan Turgay
 - [GitHub](https://github.com/kenanturgay)
 - [LinkedIn](https://www.linkedin.com/in/kenan-turgay-4a7585120/)

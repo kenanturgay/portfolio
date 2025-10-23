@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, Lock } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 import { useLanguage } from '../contexts/LanguageContext';
 import ThemeToggle from './ThemeToggle';
 import LanguageSelector from './LanguageSelector';
 
 const Navbar = ({ activeSection, setActiveSection }) => {
   const { t } = useLanguage();
+  const navigate = useNavigate();
   const [isOpen, setIsOpen] = useState(false);
 
   const navItems = ['about', 'experience', 'skills', 'projects', 'contact'];
@@ -43,9 +45,16 @@ const Navbar = ({ activeSection, setActiveSection }) => {
           </div>
 
           <div className="flex items-center space-x-4">
+            <button
+              onClick={() => navigate('/login')}
+              className="hidden md:flex items-center gap-2 px-3 py-1.5 text-sm text-white/70 hover:text-white hover:bg-white/10 rounded-lg transition-colors"
+            >
+              <Lock className="w-4 h-4" />
+              <span>Admin</span>
+            </button>
             <LanguageSelector />
             <ThemeToggle />
-            <button 
+            <button
               className="md:hidden p-2 rounded-lg hover:bg-white/10 transition-colors"
               onClick={() => setIsOpen(!isOpen)}
             >
@@ -73,6 +82,16 @@ const Navbar = ({ activeSection, setActiveSection }) => {
                 {t(`nav.${item}`)}
               </a>
             ))}
+            <button
+              onClick={() => {
+                navigate('/login');
+                setIsOpen(false);
+              }}
+              className="w-full flex items-center gap-2 px-4 py-2 text-white/70 hover:text-white hover:bg-white/10 rounded-lg transition-colors"
+            >
+              <Lock className="w-4 h-4" />
+              <span>Admin Girişi</span>
+            </button>
           </div>
         </div>
       </div>
