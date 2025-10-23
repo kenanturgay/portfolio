@@ -10,8 +10,8 @@ export const translations = {
     hero: {
       greeting: 'Merhaba, Ben',
       name: 'Kenan Turgay',
-      title: 'Full Stack Develeper',
-      description: '"Full Stack Developer olarak modern teknolojilerle çalışıyor, kullanıcı dostu ve yüksek performanslı uygulamalar geliştiriyorum.',
+      title: 'Full Stack Developer',
+      description: 'Full Stack Developer olarak modern teknolojilerle çalışıyor, kullanıcı dostu ve yüksek performanslı uygulamalar geliştiriyorum.',
       buttons: {
         contact: 'İletişime Geç',
         projects: 'Projelerimi Gör'
