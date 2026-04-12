@@ -7,9 +7,6 @@ import Skills from './components/Skills';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
 import Navbar from './components/Navbar';
-import Login from './pages/Login';
-import AdminDashboard from './pages/AdminDashboard';
-import ProtectedRoute from './components/ProtectedRoute';
 
 function HomePage() {
   const [activeSection, setActiveSection] = useState('hero');
@@ -53,15 +50,6 @@ function HomePage() {
 function App() {
   return (
     <Routes>
-      <Route path="/login" element={<Login />} />
-      <Route
-        path="/admin"
-        element={
-          <ProtectedRoute>
-            <AdminDashboard />
-          </ProtectedRoute>
-        }
-      />
       <Route path="/" element={<HomePage />} />
     </Routes>
   );

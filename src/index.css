@@ -1,7 +1,37 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-primary-50: #f0f9ff;
+  --color-primary-100: #e0f2fe;
+  --color-primary-200: #bae6fd;
+  --color-primary-300: #7dd3fc;
+  --color-primary-400: #38bdf8;
+  --color-primary-500: #0ea5e9;
+  --color-primary-600: #0284c7;
+  --color-primary-700: #0369a1;
+  --color-primary-800: #075985;
+  --color-primary-900: #0c4a6e;
+
+  --font-sans: "Outfit", system-ui, sans-serif;
+  --font-heading: "Cabinet Grotesk", system-ui, sans-serif;
+
+  --text-display-1: 8rem;
+  --text-display-1--line-height: 1;
+  --text-display-1--font-weight: 800;
+  --text-display-1--letter-spacing: -0.02em;
+
+  --text-display-2: 6rem;
+  --text-display-2--line-height: 1.1;
+  --text-display-2--font-weight: 800;
+  --text-display-2--letter-spacing: -0.02em;
+
+  --text-heading-1: 4rem;
+  --text-heading-1--line-height: 1.1;
+  --text-heading-1--font-weight: 700;
+  --text-heading-1--letter-spacing: -0.01em;
+}
 @layer base {
   html {
     @apply font-sans antialiased;
@@ -34,7 +64,7 @@
   }
   
   .btn-primary {
-    @apply px-8 py-3 bg-primary-500 dark:bg-white text-white dark:text-black rounded-full hover:bg-opacity-90 transition-all duration-300 font-medium tracking-wide;
+    @apply px-8 py-3 bg-primary-500 dark:bg-white text-white dark:text-black rounded-full hover:opacity-90 transition-all duration-300 font-medium tracking-wide;
   }
   
   .btn-secondary {

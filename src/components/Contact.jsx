@@ -4,6 +4,7 @@ import { useLanguage } from '../contexts/LanguageContext';
 import { useForm } from 'react-hook-form';
 import { z } from 'zod';
 import { zodResolver } from '@hookform/resolvers/zod';
+import Button from './Button';
 
 const Contact = () => {
   const { t } = useLanguage();
@@ -138,10 +139,10 @@ const Contact = () => {
               )}
             </div>
 
-            <button 
+            <Button 
               type="submit" 
               disabled={isSubmitting}
-              className="btn-primary w-full flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed"
+              className="w-full"
             >
               {isSubmitting ? (
                 <div className="w-5 h-5 border-2 border-white border-t-transparent rounded-full animate-spin"></div>
@@ -151,7 +152,7 @@ const Contact = () => {
                   {t('contact.form.submit')}
                 </>
               )}
-            </button>
+            </Button>
           </form>
         </div>
       </div>
