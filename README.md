@@ -23,7 +23,6 @@ Modern, responsive ve çok dilli bir portfolyo websitesi. React, Tailwind CSS ve
 - **Form Handling:** React Hook Form
 - **Validation:** Zod
 - **State Management:** React Context
-- **Database:** Supabase (opsiyonel)
 
 ## 🏗️ Proje Yapısı
 
@@ -80,15 +79,11 @@ npm run dev
 
 ## 📝 İletişim Formu
 
-İletişim formu iki modda çalışabilir:
+İletişim formu Formspree servisi üzerinden çalışmaktadır. Formu aktif etmek için:
 
-1. **Demo Mod:** Form verileri console'a yazdırılır
-2. **Supabase Mod:** Form verileri Supabase veritabanına kaydedilir
-
-Supabase'i aktif etmek için:
-1. Sağ üst köşedeki "Connect to Supabase" butonuna tıklayın
-2. Supabase projenizi oluşturun
-3. Gerekli credentials'ları `.env` dosyasına ekleyin
+1. Formspree hesabı oluşturun
+2. Yeni bir form oluşturun
+3. Form endpoint'ini `.env` dosyasına ekleyin
 
 ## 🚀 Dağıtım
 

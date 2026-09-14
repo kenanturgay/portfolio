@@ -1,5 +1,5 @@
 import React from 'react';
-import { useLanguage } from '../contexts/LanguageContext';
+import { useLanguage } from '../contexts/SimpleLanguageContext';
 import ProjectCard from './ProjectCard';
 
 const Projects = () => {

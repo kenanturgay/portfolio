@@ -1,14 +1,17 @@
 import React from 'react';
-import { createRoot } from 'react-dom/client';
-import App from './App';
+import ReactDOM from 'react-dom/client';
+import { ThemeProvider } from './contexts/SimpleThemeContext';
+import { LanguageProvider } from './contexts/SimpleLanguageContext';
 import './index.css';
-import { ThemeProvider } from './contexts/ThemeContext';
-import { LanguageProvider } from './contexts/LanguageContext';
+import App from './App';
 
-createRoot(document.getElementById('root')).render(
-  <ThemeProvider>
-    <LanguageProvider>
-      <App />
-    </LanguageProvider>
-  </ThemeProvider>
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+  <React.StrictMode>
+    <ThemeProvider>
+      <LanguageProvider>
+        <App />
+      </LanguageProvider>
+    </ThemeProvider>
+  </React.StrictMode>
 );

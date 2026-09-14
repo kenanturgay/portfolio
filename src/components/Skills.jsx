@@ -1,6 +1,6 @@
 import React from 'react';
 import { Code2 } from 'lucide-react';
-import { useLanguage } from '../contexts/LanguageContext';
+import { useLanguage } from '../contexts/SimpleLanguageContext';
 
 const Skills = () => {
   const { t } = useLanguage();

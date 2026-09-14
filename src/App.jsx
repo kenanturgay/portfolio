@@ -1,5 +1,4 @@
-import React, { useState } from 'react';
-import { Routes, Route } from 'react-router-dom';
+﻿import React, { useState } from 'react';
 import Hero from './components/Hero';
 import About from './components/About';
 import Experience from './components/Experience';
@@ -7,11 +6,8 @@ import Skills from './components/Skills';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
 import Navbar from './components/Navbar';
-import Login from './pages/Login';
-import AdminDashboard from './pages/AdminDashboard';
-import ProtectedRoute from './components/ProtectedRoute';
 
-function HomePage() {
+function App() {
   const [activeSection, setActiveSection] = useState('hero');
 
   return (
@@ -22,48 +18,31 @@ function HomePage() {
       <div className="relative">
         <Navbar activeSection={activeSection} setActiveSection={setActiveSection} />
 
-        <section id="hero" className={`${activeSection !== 'hero' ? 'hidden' : ''}`}>
+        <section id="hero" className={activeSection !== 'hero' ? 'hidden' : ''}>
           <Hero setActiveSection={setActiveSection} />
         </section>
 
-        <section id="about" className={`${activeSection !== 'about' ? 'hidden' : ''}`}>
+        <section id="about" className={activeSection !== 'about' ? 'hidden' : ''}>
           <About />
         </section>
 
-        <section id="experience" className={`${activeSection !== 'experience' ? 'hidden' : ''}`}>
+        <section id="experience" className={activeSection !== 'experience' ? 'hidden' : ''}>
           <Experience />
         </section>
 
-        <section id="skills" className={`${activeSection !== 'skills' ? 'hidden' : ''}`}>
+        <section id="skills" className={activeSection !== 'skills' ? 'hidden' : ''}>
           <Skills />
         </section>
 
-        <section id="projects" className={`${activeSection !== 'projects' ? 'hidden' : ''}`}>
+        <section id="projects" className={activeSection !== 'projects' ? 'hidden' : ''}>
           <Projects />
         </section>
 
-        <section id="contact" className={`${activeSection !== 'contact' ? 'hidden' : ''}`}>
+        <section id="contact" className={activeSection !== 'contact' ? 'hidden' : ''}>
           <Contact />
         </section>
       </div>
     </div>
-  );
-}
-
-function App() {
-  return (
-    <Routes>
-      <Route path="/login" element={<Login />} />
-      <Route
-        path="/admin"
-        element={
-          <ProtectedRoute>
-            <AdminDashboard />
-          </ProtectedRoute>
-        }
-      />
-      <Route path="/" element={<HomePage />} />
-    </Routes>
   );
 }
 

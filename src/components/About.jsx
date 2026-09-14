@@ -1,6 +1,6 @@
 import React from 'react';
 import { Code2, Laptop, Users } from 'lucide-react';
-import { useLanguage } from '../contexts/LanguageContext';
+import { useLanguage } from '../contexts/SimpleLanguageContext';
 
 const iconComponents = {
   Code2: Code2,
